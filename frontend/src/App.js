@@ -1,23 +1,15 @@
-import Textbox from "./components/Textbox";
-import "./css/App.css"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
 
 function App() {
 
-  return <div className="app-main">
-    <div className="app-inner">
-      <p className="title">Writing Inspiration Generator</p>
-      <Textbox /> 
-      <div style={{
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "end",
-        width: "100%",
-        marginTop: "10px"
-      }}>
-        <button className="app-submit button">Submit</button>
-      </div>
-    </div>
-  </div>;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

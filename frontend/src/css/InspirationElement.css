@@ -1,0 +1,32 @@
+.inspiration-element {
+    width: 95%;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    column-gap: 5px;
+    position: relative;
+}
+
+.inspiration-header {
+    height: 450px;
+    width: 100%;
+    background: rgb(225, 225, 225);
+    border-radius: 5px;
+}
+
+.sound-button {
+    position: sticky;
+    top: 50px;
+    right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    width: 100px;
+}
+
+.sound-button-text {
+    margin: 0;
+}

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../css/textbox.css"
+import "../css/Textbox.css"
 
 function Textbox() {
   const [value, setValue] = useState("");
