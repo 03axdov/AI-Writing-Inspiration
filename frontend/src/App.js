@@ -1,17 +1,23 @@
-import { useEffect, useState } from "react";
+import Textbox from "./components/Textbox";
+import "./css/App.css"
 
 function App() {
-  const [msg, setMsg] = useState("");
 
-  useEffect(() => {
-    fetch("http://localhost:8000/api/test/")
-      .then(res => res.json())
-      .then(data => setMsg(data.message));
-  }, []);
-
-  return <h1>
-    {msg}
-  </h1>;
+  return <div className="app-main">
+    <div className="app-inner">
+      <p className="title">Writing Inspiration Generator</p>
+      <Textbox /> 
+      <div style={{
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "end",
+        width: "100%",
+        marginTop: "10px"
+      }}>
+        <button className="app-submit button">Submit</button>
+      </div>
+    </div>
+  </div>;
 }
 
 export default App;

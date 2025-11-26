@@ -1,12 +1,30 @@
-body {
+body, html {
   margin: 0;
+  height: 100%;
+  width: 100%;
   font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
-  color: white;
-  background: rgb(21,21,21);
+  color: black;
+  background: white;
   font-weight: 500;
   font-optical-sizing: auto;
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
   font-size: 16px;
 
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 3px;
 }
