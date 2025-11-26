@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+  color: white;
+  background: rgb(21,21,21);
+  font-weight: 500;
+  font-optical-sizing: auto;
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  font-size: 16px;
+
+}
